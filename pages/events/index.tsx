@@ -1,7 +1,7 @@
 import { NextPage } from 'next'
 import { AppProps } from 'next/app'
 
-const EventsPage: NextPage<AppProps> = () => {
+const Events: NextPage<AppProps> = () => {
   return (
     <>
       <h1>My Events</h1>
@@ -9,4 +9,4 @@ const EventsPage: NextPage<AppProps> = () => {
   )
 }
 
-export default EventsPage
+export default Events

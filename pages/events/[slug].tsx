@@ -2,7 +2,7 @@ import { NextPage } from 'next'
 import { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 
-const EventPage: NextPage<AppProps> = () => {
+const Event: NextPage<AppProps> = () => {
   const router = useRouter()
 
   return (
@@ -13,4 +13,4 @@ const EventPage: NextPage<AppProps> = () => {
   )
 }
 
-export default EventPage
+export default Event

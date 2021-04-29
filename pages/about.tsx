@@ -1,11 +1,13 @@
 import { NextPage } from 'next'
 
-const AboutPage: NextPage = () => {
+const About: NextPage = () => {
   return (
     <div>
       <h1>About</h1>
+      <p>This is an app to find the latest DJ and other musical events</p>
+      <p>Version: 1.0.0</p>
     </div>
   )
 }
 
-export default AboutPage
+export default About
