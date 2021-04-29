@@ -1,15 +1,12 @@
 import { NextPage } from 'next'
-import { AppProps } from 'next/app'
-import { useRouter } from 'next/router'
 
-const Event: NextPage<AppProps> = () => {
-  const router = useRouter()
+import Layout from '../../components/Layout'
 
+const Event: NextPage = () => {
   return (
-    <>
-      <h1>My Slug</h1>
-      <h3>{router.query.slug}</h3>
-    </>
+    <Layout>
+      <h1>My Event</h1>
+    </Layout>
   )
 }
 

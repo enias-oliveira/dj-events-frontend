@@ -6,7 +6,7 @@ const Footer = (): JSX.Element => {
     <footer className={styles.footer}>
       <p>Copyright &copy; DJ Events 2021</p>
       <p>
-        <Link href="/">About This Project</Link>
+        <Link href="/about">About This Project</Link>
       </p>
     </footer>
   )

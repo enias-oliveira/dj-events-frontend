@@ -1,11 +1,11 @@
 import { NextPage } from 'next'
-import { AppProps } from 'next/app'
+import Layout from '../../components/Layout'
 
-const Events: NextPage<AppProps> = () => {
+const Events: NextPage = () => {
   return (
-    <>
+    <Layout>
       <h1>My Events</h1>
-    </>
+    </Layout>
   )
 }
 
