@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import { ReactNode } from 'react'
 
+import Footer from './Footer'
+import Header from './Header'
+import styles from '../styles/Layout.module.css'
+
 type Props = {
   title?: string
   description?: string
@@ -17,7 +21,9 @@ const Layout = ({ title, keywords, description, children }: Props): JSX.Element 
         <meta name="keywords" content={keywords} />
       </Head>
 
-      {children}
+      <Header />
+      <div className={styles.container}>{children}</div>
+      <Footer />
     </>
   )
 }
