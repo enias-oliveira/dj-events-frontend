@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 
 import Footer from './Footer'
 import Header from './Header'
-import styles from '../styles/Layout.module.css'
+import styles from '@/styles/Layout.module.css'
 
 type Props = {
   title?: string

@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 
-import Layout from '../../components/Layout'
+import Layout from '@/components/Layout'
 
 const Event: NextPage = () => {
   return (

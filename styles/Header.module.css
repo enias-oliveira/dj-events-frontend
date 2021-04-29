@@ -9,13 +9,14 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.header a {
+.header span {
   color: #333;
   margin-right: 20px;
 }
 
-.header a:hover {
+.header span:hover {
   color: #000;
+  cursor: pointer;
 }
 .header ul {
   display: flex;
