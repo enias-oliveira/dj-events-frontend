@@ -4,6 +4,8 @@ import { ReactNode } from 'react'
 import Footer from './Footer'
 import Header from './Header'
 import styles from '@/styles/Layout.module.css'
+import Showcase from './Showcase'
+import { useRouter } from 'next/dist/client/router'
 
 type Props = {
   title?: string
@@ -13,6 +15,8 @@ type Props = {
 }
 
 const Layout = ({ title, keywords, description, children }: Props): JSX.Element => {
+  const { pathname } = useRouter()
+
   return (
     <>
       <Head>
@@ -22,6 +26,7 @@ const Layout = ({ title, keywords, description, children }: Props): JSX.Element 
       </Head>
 
       <Header />
+      {pathname === '/' && <Showcase />}
       <div className={styles.container}>{children}</div>
       <Footer />
     </>
